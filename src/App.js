@@ -17,8 +17,8 @@ function App() {
            'Hello JSX'
           )
        }
-      
-          <Profile text ={{name:'peter'}} data="Profile"/>
+      <Profile></Profile>
+         
       </header>
     </div>
   );
