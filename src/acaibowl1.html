@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing page</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<style>
+html,body{
+
+padding:0;
+margin:0;
+}
+::after,
+::before{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+*:focus,button:focus,input[type="submit"]:focus,a:focus{outline:0;}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button,
+input {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+select {
+    word-wrap: normal;
+}
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+    -webkit-appearance: button;
+}
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+@media (min-width: 576px) {
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col{
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.col-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+.col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+.col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.col-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+.col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+.col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.col-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+.col-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+@media (min-width: 576px) {
+    .col-sm {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .row-cols-sm-1 > * {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .row-cols-sm-2 > * {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .row-cols-sm-3 > * {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .row-cols-sm-4 > * {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .row-cols-sm-5 > * {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .row-cols-sm-6 > * {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .col-sm-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    .col-sm-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    .col-sm-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .col-sm-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-sm-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .col-sm-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .col-sm-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-sm-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .col-sm-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+a,a:hover{text-decoration: none;}
+a{
+  color: #000;
+  transition: .3s ease all;
+  -webkit-transition: .3s ease all;
+}
+li, ul{
+  list-style: none;
+  margin: 0;
+}
+
+body{font-family: 'Roboto', sans-serif;color: #000;}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.375rem;}
+h4{font-size: 1.125rem;}
+p{
+  font-size: 14px;
+  line-height: 24px;
+}
+.left{text-align: left;}
+.right{text-align: right;}
+.center{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.justify{text-align: justify;}
+.alin_center{
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* Header */
+.logo a{display: block;}
+.logo img{max-width:206px;width: 100%;}
+ul.contact_info li{display: inline-block;}
+ul.contact_info li svg{width: 22px;height: 22px;}
+ul.contact_info li.email{margin-right: 35px;}
+ul.contact_info li.email a{font-size: 18px;line-height: 34px;margin-left: 15px;}
+ul.contact_info li.phone a{font-size: 24px;line-height: 28px;font-weight: 700;margin-left: 12px;}
+
+/* Banner */
+.banner .banner-img_wrapper{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 60px;
+}
+.banner .banner-img_wrapper img{width: 100%;margin-bottom: -120px;}
+.banner .banner-img_wrapper .sold_tag{
+	position: absolute;
+	top: 0;right: 0;
+	display: inline-block;
+	background: #000;
+	padding: 10px 45px;
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+	-webkit-transform: rotateZ(45deg) translate(65px, -15px);
+      -ms-transform: rotateZ(45deg) translate(65px, -15px);
+          transform: rotateZ(45deg) translate(65px, -15px);
+}
+.banner .banner-img_wrapper a.btn{
+	display: inline-block;
+	padding: 20px 40px;
+	background: #000000;
+	box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
+	color: #fff;
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.banner .banner-img_wrapper a.btn:hover{background: #fff;color: #000;}
+
+/* Details section*/
+.bg-decorations{
+	width: 100%;
+	overflow: hidden;
+	padding: 60px 0;
+	position: relative;
+	background: #F2F2F2;
+	z-index: 1;
+}
+.bg-decorations:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	background-image: url("data:image/svg+xml,%3Csvg width='1220' height='2150' viewBox='0 0 1220 2150' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='801.5' y='2.5' width='595' height='595' stroke='%23EFEEF3' stroke-width='5'/%3E%3Crect x='861.5' y='62.5' width='595' height='595' stroke='%23EFEEF3' stroke-width='5'/%3E%3Crect x='-184.5' y='1492.5' width='595' height='595' stroke='%23EFEEF3' stroke-width='5'/%3E%3Crect x='-124.5' y='1552.5' width='595' height='595' stroke='%23EFEEF3' stroke-width='5'/%3E%3Crect x='-16.5' y='329.5' width='595' height='595' stroke='%23EFEEF3' stroke-width='5'/%3E%3Crect x='43.5' y='389.5' width='595' height='595' stroke='%23EFEEF3' stroke-width='5'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-size:cover;
+	z-index: -1;
+}
+
+.REA-detail h1{
+	font-size: 64px;
+	line-height: 72px;
+	padding-right: 50px;
+	margin-bottom: 50px;
+}
+
+.page-id-5815 .top_bar {
+	display: none;
+}
+
+.page-id-5815 .footer_bar {
+	display: none;
+}
+
+.title{
+	font-size: 48px;
+	line-height: 58px;
+	position: relative;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+.title:after{
+	content: '';
+	width: 100px;
+	height: 3px;
+	background: #000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+.title.white:after{background: #fff;}
+.title.center:after{
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.david_rousso{
+    padding: 60px 60px 40px;
+    position: relative;
+    z-index: 222;
+    margin-bottom: 60px;
+}
+.david_rousso:after{
+	content: '';
+	width: calc(100% + 140px);
+	height: 100%;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+.david_rousso p{margin-bottom: 20px;} 
+.david_rousso-img{
+    position: relative;
+    z-index: 9999;
+    margin-top: 120px;
+	margin-bottom: 60px;
+}
+.david_rousso-img img{width: 100%;}
+.david_rousso-img a{
+	background:#000;
+	color: #fff;
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 700;
+	display: block;
+	padding: 20px 0;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
+	text-align: center;
+}
+.david_rousso-img a:hover{
+    background:#fff;
+    color: #000;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+.david_rousso-img a svg{
+    width: 36px;height:36px;fill: #fff;
+    transition: .2s ease all;
+  -webkit-transition: .2s ease all;
+}
+.david_rousso-img a:hover svg{
+    fill: #000;
+}
+.david_rousso-specialities,
+.contact-form{
+    padding: 40px 60px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+    color: #fff;
+    position: relative;
+    z-index: 9999;
+    margin-bottom: 60px;
+}
+.david_rousso-specialities ul li{
+	position: relative;
+	padding: 0 0 12px 20px;
+	line-height: 24px;
+	font-size: 14px;
+}
+.david_rousso-specialities ul li:after{
+	content: '';
+	border: 7px solid transparent;
+	border-left-color: #fff;
+	position: absolute;
+	top: 3px;
+	left: 0;
+}
+.contact-form{
+	padding:40px;
+	width: calc(100% - 40px);
+    margin-left: 0;
+}
+.contact-form span{
+	font-size: 18px;
+	line-height: 21px;
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+.contact-form input,
+.contact-form select,
+.contact-form button{
+	width: 100%;
+    background: #fff;
+    border: 1px solid #E6E6E6;
+    min-height: initial;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    color: #000;
+	font-size: 14px;
+	line-height: 24px;
+}
+.contact-form button{
+	border: 0;
+	margin-bottom:0px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 18px;
+	line-height: 24px;
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+}
+.contact-form button:hover{
+    color: #fff;
+    background:#000; 
+}
+.contact-form select{
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	appearance:none;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-repeat: no-repeat;
+	background-position-x: calc(100% - 15px);
+	background-position-y: 15px;
+	padding-right: 2rem;
+}
+.contact-form ::-webkit-input-placeholder{
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+}
+.contact-form :-ms-input-placeholder{
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+}
+.contact-form ::placeholder{
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.david_rousso-social-media{
+	padding: 40px 50px 40px 60px;
+    background: #fff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    color: #000;
+    position: relative;
+    z-index: 9999;
+    margin-bottom: 60px;
+}
+.david_rousso-social-media a{
+	margin-bottom: 10px;
+	display: block;
+	line-height: 50px;
+	font-size: 16px;
+	text-decoration-line: underline;
+}
+.david_rousso-social-media span.shape_btn{
+	width: 50px;height: 50px;
+	background:#000;
+	display: inline-block;
+    text-align: center;
+    margin-right: 15px;
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
+}
+.david_rousso-social-media span.shape_btn svg{
+    width: 24px;fill: #fff;
+}
+
+.david_rousso-social-media span.shape_btn svg path{
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+}
+.david_rousso-social-media span.shape_btn.insta svg{width: 25px;}
+.david_rousso-social-media span.shape_btn.bridge svg{width: 29px;}
+.david_rousso-social-media a:hover span.shape_btn{
+    background:#fff;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+.david_rousso-social-media a:hover span.shape_btn svg path{fill: #000;}
+
+.featured-listings{
+	padding: 40px 40px 30px;
+    background: #fff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    color: #000;
+    position: relative;
+    z-index: 9999;
+}
+.featured-listings .fl-wrapper{
+    display: block;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
+    transition: .3s ease all;
+  -webkit-transition: .3s ease all;
+}
+.featured-listings .fl-wrapper:hover{
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);    
+}
+.featured-listings img{width: 100%;}
+.featured-listings .location_area{
+	font-size: 16px;
+	line-height: 24px;
+	margin-top:20px; 
+}
+.featured-listings .location_city{
+	font-size: 14px;
+	line-height: 16px;
+}
+.featured-listings .price{
+	font-weight: 700;
+	font-size: 18px;
+	margin-top:10px;
+    padding-bottom:10px;
+	line-height: 24px;
+}
+
+footer{background: #161616;padding:20px;}
+footer a, footer p{
+	color: #fff;
+	font-size: 18px;
+	line-height: 34px;
+}
+@media (max-width: 1100px){
+    .david_rousso{padding: 40px 40px 20px;}
+    .david_rousso-specialities, .contact-form{padding: 40px;}
+    .david_rousso-social-media{padding: 40px 30px 20px 40px;}
+    .david_rousso-social-media a{line-height: 40px;}
+    .david_rousso-social-media span.shape_btn{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 991px){
+	ul.contact_info li.email{margin-right: 0;}
+    .banner .banner-img_wrapper a.btn{
+        padding: 16px 30px;
+        font-size: 16px;
+    }
+    .david_rousso{padding: 30px 30px 10px;}
+	.REA-detail h1{font-size: 45px;line-height: 57px;padding-right: 40px;margin-bottom: 30px;}
+	.title{
+	    font-size: 36px;
+	    line-height: 48px;
+	}
+	.david_rousso-img a{
+		font-size: 24px;
+	    line-height: 30px;
+	}
+	.david_rousso-specialities{padding: 20px 30px;}
+    .contact-form{padding: 30px;}
+    .contact-form .row .col-sm-6:nth-child(1){padding-right: 7px;}
+    .contact-form .row .col-sm-6:nth-child(2){padding-left: 7px;}
+    .contact-form input, .contact-form select, .contact-form button{
+        padding: 10px;
+        margin-bottom: 14px;
+    }
+    .contact-form select{
+        background-position-x: calc(100% - 5px);
+        background-position-y: 10px;
+        padding-right: 30px;
+    }
+    .contact-form button{font-size: 16px;}
+    .david_rousso-social-media{padding: 20px 15px 10px 30px;}
+    .david_rousso-social-media a{font-size: 14px;}
+    .featured-listings{padding: 20px 30px;}
+    .featured-listings .col-sm-3{
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+    footer{padding: 10px;}
+    footer a, footer p{font-size: 16px;line-height: 30px;}
+}
+.hide-desktop{display: none;}
+@media (max-width: 575px){
+    .hide-mobile{display: none;}
+    .hide-desktop{display: block;}
+    header, ul.contact_info.right, ul.contact_info.right li{text-align: center;}
+    header .row.alin_center .col-sm-3{order: 2;}
+    header .row.alin_center .col-sm-9{order: 1;background: #000;}
+    ul.contact_info li.phone a,
+    ul.contact_info li.email a{
+        font-size: 14px;
+        line-height: 28px;
+        color: #fff;
+        font-weight: 400;
+    }
+    ul.contact_info li svg{
+        width: 18px;
+        height: 18px;
+        fill: #fff;
+    }
+    .logo img{max-width: 158px;}
+    .banner .banner-img_wrapper{padding-bottom: 17px;}
+    .banner .banner-img_wrapper img{
+        min-height: 290px;
+        object-fit: cover;
+        margin-bottom: -70px;
+    }
+    .banner .banner-img_wrapper .sold_tag{
+        font-size: 16px;
+        line-height: 20px;
+        -webkit-transform: rotateZ(45deg) translate(56px, -25px);
+        -ms-transform: rotateZ(45deg) translate(56px, -25px);
+        transform: rotateZ(45deg) translate(56px, -25px);
+    }
+    .bg-decorations{padding: 20px 0 15px;}
+    .david_rousso{padding: 15px 25px 5px;margin-bottom: 15px;}
+    .david_rousso:after{width: 100%;}
+    .title{margin-bottom: 25px;}
+    .david_rousso p{margin-bottom: 15px;}
+    .david_rousso-img{
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .david_rousso-specialities{
+        padding: 15px 25px;
+        margin-bottom: 15px;
+    }
+    .david_rousso-social-media{
+        padding: 20px 15px 10px 25px;
+        margin-bottom: 15px;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 25px;
+        margin-bottom: 15px;
+    }
+    .contact-form button{margin-bottom: 0;}
+    .contact-form .row .col-sm-6:nth-child(1){padding-right: 15px;}
+    .contact-form .row .col-sm-6:nth-child(2){padding-left: 15px;}
+    .featured-listings{padding: 20px 30px 0;}
+    .featured-listings .fl-wrapper{margin-bottom: 15px;}
+    .featured-listings .fl-wrapper img{width: auto;}
+    .featured-listings .location_area{margin-top: 10px;}
+}
+
+@media (max-width: 380px){
+    .banner .banner-img_wrapper a.btn{
+        padding: 12px 30px;
+        letter-spacing: 0;
+    }
+    .REA-detail h1{
+        font-size: 40px;
+        line-height: 50px;
+        padding-right: 20px;
+        margin-bottom: 25px;
+    }
+    .title{
+        font-size: 30px;
+        line-height: 42px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .david_rousso-img a{
+        font-size: 20px;
+        line-height: 25px;
+        padding: 10px 0;
+        margin-top: -1px;
+    }
+    .david_rousso-img a svg{width: 22px;height: 27px;}
+    .contact-form span{font-size: 16px;}
+    .featured-listings{padding: 20px 10px 0;}
+}
+
+	</style>    
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row alin_center">
+				<div class="col-sm-3">
+					<div class="logo">
+						<a href="#"><img src="https://pedinistaging.wpengine.com/wp-content/uploads/2020/08/logo-dark.png" /></a>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<ul class="contact_info right">
+						<li class="email left"><a href="mailto:david.rousso@compass.com">
+							<svg width="24" height="22" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18.75 5.65V1.1875C18.7497 0.938947 18.6509 0.700656 18.4751 0.524902C18.2993 0.349149 18.0611 0.250285 17.8125 0.25H6.1875C5.93895 0.250285 5.70066 0.349149 5.5249 0.524902C5.34915 0.700656 5.25029 0.938947 5.25 1.1875V5.65L0.75 8.86403V21.25H23.25V8.86403L18.75 5.65ZM21.2662 9.29064L18.75 10.9356V7.49312L21.2662 9.29064ZM6.75 1.75H17.25V11.9164L14.5703 13.6685L12.387 12.5364L10.0074 13.6851L6.75 11.7074V1.75ZM12.363 14.2136L21.75 19.081V19.75H2.25V19.0958L12.363 14.2136ZM2.25 10.7301L8.39738 14.4625L2.25 17.4301V10.7301ZM16.099 14.4613L21.75 10.7663V17.3913L16.099 14.4613ZM5.25 7.49312V10.7969L2.74997 9.27883L5.25 7.49312Z"/>
+							</svg>
+							david.rousso@compass.com</a></li>
+
+						<li class="phone left"><a href="tel:3059158994">
+							<svg width="16" height="24" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 1.5H3.5C3.10218 1.5 2.72064 1.65804 2.43934 1.93934C2.15804 2.22064 2 2.60218 2 3V21C2 21.3978 2.15804 21.7794 2.43934 22.0607C2.72064 22.342 3.10218 22.5 3.5 22.5H12.5C12.8978 22.5 13.2794 22.342 13.5607 22.0607C13.842 21.7794 14 21.3978 14 21V3C14 2.60218 13.842 2.22064 13.5607 1.93934C13.2794 1.65804 12.8978 1.5 12.5 1.5ZM3.5 0C2.70435 0 1.94129 0.316071 1.37868 0.87868C0.81607 1.44129 0.5 2.20435 0.5 3V21C0.5 21.7956 0.81607 22.5587 1.37868 23.1213C1.94129 23.6839 2.70435 24 3.5 24H12.5C13.2956 24 14.0587 23.6839 14.6213 23.1213C15.1839 22.5587 15.5 21.7956 15.5 21V3C15.5 2.20435 15.1839 1.44129 14.6213 0.87868C14.0587 0.316071 13.2956 0 12.5 0L3.5 0Z" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M8 21C8.39782 21 8.77936 20.842 9.06066 20.5607C9.34196 20.2794 9.5 19.8978 9.5 19.5C9.5 19.1022 9.34196 18.7206 9.06066 18.4393C8.77936 18.158 8.39782 18 8 18C7.60218 18 7.22064 18.158 6.93934 18.4393C6.65804 18.7206 6.5 19.1022 6.5 19.5C6.5 19.8978 6.65804 20.2794 6.93934 20.5607C7.22064 20.842 7.60218 21 8 21Z"/>
+							</svg>
+							(305) 915-8994</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="banner">
+		<div class="banner-img_wrapper">
+			<img src="https://pedinistaging.wpengine.com/wp-content/uploads/2020/08/sold-out-img.png">
+			<span class="sold_tag">Just Sold</span>
+			<a href="#" class="btn">Click to Learn more</a>
+		</div>
+	</section>
+	<div class="bg-decorations">
+		<section class="REA-detail">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7">
+						<h1>Miami Real Estate Advisor</h1>
+						<div class="david_rousso">
+							<h2 class="title">David Rousso</h2>
+							<p>
+								David provides the clients he serves with an effortless experience from start to finish. He is known for diving deep into the market by understanding trends, architecture, interior design, and consumer needs. He has a unique talent in understanding the interior value of a home which stems from being a Co-Owner of Pedini Miami. Pedini Miami is a luxury design firm store for interior woodwork such Kitchen, Bathrooms, Closets & Special Furniture. David has experience working with high-profile individuals through the projects he has overseen at Pedini and uses those same skills in the world of Luxury Real Estate. David says, “As an advisor, I take pride in being more than a realtor by helping my clients with any of their home decisions”.
+							</p>
+							<p>
+								David has also developed a strong interest in new construction and real estate development by working daily with Builders, Investors, and End Users in the process of building a home. From finding the land to build on to connecting them with the architects and designers, David is a one-stop agent that can connect several parts to bring a deal together.
+							</p>
+							<p>
+								Originally from Caracas, Venezuela, David has grown up in Miami since the age of 5. He is fluent in English and Spanish. After attending high school at Doral Academy, he spent 4 years obtaining his Business Degree at Florida International University. David plans to continue his studies in order to continue to learn and adapt to better serve his clients day in and day out.
+							</p>
+						</div>
+							<!-- for mobile view  -->
+						<div class="hide-desktop">
+							<div class="david_rousso-img">
+								<img src="https://pedinistaging.wpengine.com/wp-content/uploads/2020/08/david-rousso-img.png">			
+								<a href="">
+									<svg width="16" height="24" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 1.5H3.5C3.10218 1.5 2.72064 1.65804 2.43934 1.93934C2.15804 2.22064 2 2.60218 2 3V21C2 21.3978 2.15804 21.7794 2.43934 22.0607C2.72064 22.342 3.10218 22.5 3.5 22.5H12.5C12.8978 22.5 13.2794 22.342 13.5607 22.0607C13.842 21.7794 14 21.3978 14 21V3C14 2.60218 13.842 2.22064 13.5607 1.93934C13.2794 1.65804 12.8978 1.5 12.5 1.5ZM3.5 0C2.70435 0 1.94129 0.316071 1.37868 0.87868C0.81607 1.44129 0.5 2.20435 0.5 3V21C0.5 21.7956 0.81607 22.5587 1.37868 23.1213C1.94129 23.6839 2.70435 24 3.5 24H12.5C13.2956 24 14.0587 23.6839 14.6213 23.1213C15.1839 22.5587 15.5 21.7956 15.5 21V3C15.5 2.20435 15.1839 1.44129 14.6213 0.87868C14.0587 0.316071 13.2956 0 12.5 0L3.5 0Z" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8 21C8.39782 21 8.77936 20.842 9.06066 20.5607C9.34196 20.2794 9.5 19.8978 9.5 19.5C9.5 19.1022 9.34196 18.7206 9.06066 18.4393C8.77936 18.158 8.39782 18 8 18C7.60218 18 7.22064 18.158 6.93934 18.4393C6.65804 18.7206 6.5 19.1022 6.5 19.5C6.5 19.8978 6.65804 20.2794 6.93934 20.5607C7.22064 20.842 7.60218 21 8 21Z"/>
+									</svg> 
+									(305) 915-8994</a>
+							</div>
+							<div class="david_rousso-specialities">
+								<h3 class="title white">Specialities</h3>
+								<ul>
+									<li>Vice President of Pedini Miami</li>
+									<li>Advisor for the Nicolas Group</li>
+									<li>Fluent in English & Spanish</li>
+									<li>Buyers Agent/Listing Agent</li>
+								</ul>
+							</div>
+							<div class="david_rousso-social-media">
+								<h3 class="title">Social Media</h3>
+								<ul>
+									<li>
+										<a href="#">
+											<span class="shape_btn">
+												<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0)">
+													<path d="M5.70066 24V7.80725H0.318521V24H5.70066ZM3.01029 5.59507C4.88714 5.59507 6.05538 4.35166 6.05538 2.7978C6.02042 1.2089 4.88721 0 3.0459 0C1.20489 0 0.000976562 1.20893 0.000976562 2.7978C0.000976562 4.35173 1.16894 5.59507 2.97515 5.59507H3.01012H3.01029ZM8.67966 24H14.0618V14.9572C14.0618 14.4732 14.0968 13.9898 14.2389 13.6438C14.628 12.6769 15.5136 11.6754 17.0003 11.6754C18.9479 11.6754 19.7271 13.1603 19.7271 15.3371V23.9999H25.1089V14.7151C25.1089 9.74134 22.4536 7.42709 18.9125 7.42709C16.009 7.42709 14.7342 9.05002 14.026 10.1554H14.0619V7.80691H8.67978C8.75042 9.32635 8.67978 23.9997 8.67978 23.9997L8.67966 24Z" fill="white"/>
+													</g>
+													<defs>
+													<clipPath id="clip0">
+													<rect width="25.11" height="24" fill="white"/>
+													</clipPath>
+													</defs>
+												</svg>
+											</span>	
+											LinkedIn
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="shape_btn insta">
+												<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14.9999 11.0947C12.8495 11.0947 11.0946 12.8496 11.0946 15C11.0946 17.1504 12.8495 18.9053 14.9999 18.9053C17.1503 18.9053 18.9052 17.1504 18.9052 15C18.9052 12.8496 17.1503 11.0947 14.9999 11.0947ZM26.7128 15C26.7128 13.3828 26.7274 11.7803 26.6366 10.166C26.5458 8.29103 26.1181 6.62697 24.747 5.25588C23.3729 3.88185 21.7118 3.45705 19.8368 3.36623C18.2196 3.27541 16.6171 3.29006 15.0028 3.29006C13.3856 3.29006 11.7831 3.27541 10.1688 3.36623C8.29384 3.45705 6.62978 3.88478 5.25868 5.25588C3.88466 6.6299 3.45986 8.29103 3.36904 10.166C3.27822 11.7832 3.29286 13.3858 3.29286 15C3.29286 16.6143 3.27822 18.2197 3.36904 19.834C3.45986 21.709 3.88759 23.3731 5.25868 24.7442C6.63271 26.1182 8.29384 26.543 10.1688 26.6338C11.786 26.7246 13.3886 26.71 15.0028 26.71C16.62 26.71 18.2226 26.7246 19.8368 26.6338C21.7118 26.543 23.3759 26.1152 24.747 24.7442C26.121 23.3701 26.5458 21.709 26.6366 19.834C26.7304 18.2197 26.7128 16.6172 26.7128 15ZM14.9999 21.0088C11.6747 21.0088 8.99111 18.3252 8.99111 15C8.99111 11.6748 11.6747 8.99123 14.9999 8.99123C18.3251 8.99123 21.0087 11.6748 21.0087 15C21.0087 18.3252 18.3251 21.0088 14.9999 21.0088ZM21.2548 10.1485C20.4784 10.1485 19.8515 9.5215 19.8515 8.74513C19.8515 7.96877 20.4784 7.34181 21.2548 7.34181C22.0311 7.34181 22.6581 7.96877 22.6581 8.74513C22.6583 8.92949 22.6222 9.11207 22.5517 9.28243C22.4813 9.4528 22.3779 9.60759 22.2476 9.73795C22.1172 9.8683 21.9624 9.97166 21.7921 10.0421C21.6217 10.1125 21.4391 10.1487 21.2548 10.1485Z" fill="white"/>
+												</svg>
+											</span>	
+											Instagram
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="shape_btn">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M19.5 6V1.5C19.5 0.671719 18.8283 0 18 0H1.5C0.671719 0 0 0.671719 0 1.5V6C0 6.82828 0.671719 7.5 1.5 7.5H18C18.8283 7.5 19.5 6.82828 19.5 6ZM21 3V9C21 9.82828 20.3283 10.5 19.5 10.5H12C10.343 10.5 9 11.843 9 13.5V15C8.17172 15 7.5 15.6717 7.5 16.5V22.5C7.5 23.3283 8.17172 24 9 24H12C12.8283 24 13.5 23.3283 13.5 22.5V16.5C13.5 15.6717 12.8283 15 12 15V13.5H19.5C21.9853 13.5 24 11.4853 24 9V6C24 4.34297 22.657 3 21 3Z" fill="white"/>
+												</svg>
+											</span>	
+											David’s Concierge Page
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="shape_btn bridge">
+											<svg width="29" height="17" viewBox="0 0 29 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 8.38323V16.7273H2.63636C2.63636 13.8141 4.99855 11.4388 7.90909 11.4388C10.817 11.4388 13.1765 13.8194 13.1818 16.7273H15.8182C15.8182 13.8141 18.1777 11.4388 21.0883 11.4388C22.4877 11.445 23.8279 12.0047 24.8163 12.9955C25.8046 13.9863 26.3609 15.3278 26.3636 16.7273H29V8.38323C21.3097 -2.23867 6.29827 -0.904675 0 8.38323ZM5.27273 8.81823H1.31818C2.421 7.3624 3.75725 6.09919 5.27273 5.07987V8.81823ZM10.5455 8.81823H6.59091V4.23887C7.84163 3.5688 9.16969 3.05439 10.5455 2.70714V8.81823ZM15.8182 8.81823H11.8636V2.43296C13.1713 2.21942 14.5 2.16405 15.8182 2.26951V8.81823ZM21.0909 8.81823H17.1364V2.4356C18.4994 2.65705 19.8255 3.04723 21.0909 3.59823V8.81823ZM22.4091 8.81823V4.24151C24.4736 5.37272 26.2715 6.93336 27.6818 8.81823H22.4091Z" fill="white"/>
+											</svg>
+
+											</span>	
+											David’s Bridge Loan Services Page
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					<!-- for mobile view -->
+						<div class="contact-form center">
+							<span>Need Help?</span>
+							<h3 class="title white center">Message Us</h3>
+							<form>
+								<div class="row">
+									<div class="col-sm-6">
+										<input type="text" name="" id="full_Name" class="form__input" placeholder="Full Name">
+									</div>
+									<div class="col-sm-6">
+										<input type="email" name="" id="email" class="form__input" autocorrect="off" autocapitalize="off" autocomplete="email" aria-required="true" placeholder="Email Address">
+									</div>
+									<div class="col-sm-12">
+										<input type="text" name="" id="Message" class="form__input" placeholder="Message Area">
+										<select name="" id="scope_of_interest">
+											<option value="0">Scope of Interest</option>
+											<option value="1">investment opportunity</option>
+											<option value="2">first time home buyer/option>
+										</select>
+										<select name="" id="learning_more">
+											<option value="0">What Would You Be Interested In Learning More About?</option>
+											<option value="1">Receive market updates on area of interest</option>
+											<option value="2">new restaurants</option>
+											<option value="3">availability of homes</option>
+											<option value="4">forecasted appreciation/depreciation of area</option>
+											<option value="5">demographics of area</option>
+										</select>
+										<button type="submit" class="customer__button">submit message</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-5 hide-mobile">
+						<div class="david_rousso-img">
+							<img src="https://pedinistaging.wpengine.com/wp-content/uploads/2020/08/david-rousso-img.png">			
+							<a href="">
+								<svg width="16" height="24" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 1.5H3.5C3.10218 1.5 2.72064 1.65804 2.43934 1.93934C2.15804 2.22064 2 2.60218 2 3V21C2 21.3978 2.15804 21.7794 2.43934 22.0607C2.72064 22.342 3.10218 22.5 3.5 22.5H12.5C12.8978 22.5 13.2794 22.342 13.5607 22.0607C13.842 21.7794 14 21.3978 14 21V3C14 2.60218 13.842 2.22064 13.5607 1.93934C13.2794 1.65804 12.8978 1.5 12.5 1.5ZM3.5 0C2.70435 0 1.94129 0.316071 1.37868 0.87868C0.81607 1.44129 0.5 2.20435 0.5 3V21C0.5 21.7956 0.81607 22.5587 1.37868 23.1213C1.94129 23.6839 2.70435 24 3.5 24H12.5C13.2956 24 14.0587 23.6839 14.6213 23.1213C15.1839 22.5587 15.5 21.7956 15.5 21V3C15.5 2.20435 15.1839 1.44129 14.6213 0.87868C14.0587 0.316071 13.2956 0 12.5 0L3.5 0Z" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8 21C8.39782 21 8.77936 20.842 9.06066 20.5607C9.34196 20.2794 9.5 19.8978 9.5 19.5C9.5 19.1022 9.34196 18.7206 9.06066 18.4393C8.77936 18.158 8.39782 18 8 18C7.60218 18 7.22064 18.158 6.93934 18.4393C6.65804 18.7206 6.5 19.1022 6.5 19.5C6.5 19.8978 6.65804 20.2794 6.93934 20.5607C7.22064 20.842 7.60218 21 8 21Z"/>
+								</svg> 
+								(305) 915-8994</a>
+						</div>
+						<div class="david_rousso-specialities">
+							<h3 class="title white">Specialities</h3>
+							<ul>
+								<li>Vice President of Pedini Miami</li>
+								<li>Advisor for the Nicolas Group</li>
+								<li>Fluent in English & Spanish</li>
+								<li>Buyers Agent/Listing Agent</li>
+							</ul>
+						</div>
+						<div class="david_rousso-social-media">
+							<h3 class="title">Social Media</h3>
+							<ul>
+								<li>
+									<a href="https://www.linkedin.com/in/david-rousso-073515159/" target="_blank"> 
+										<span class="shape_btn">
+											<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0)">
+												<path d="M5.70066 24V7.80725H0.318521V24H5.70066ZM3.01029 5.59507C4.88714 5.59507 6.05538 4.35166 6.05538 2.7978C6.02042 1.2089 4.88721 0 3.0459 0C1.20489 0 0.000976562 1.20893 0.000976562 2.7978C0.000976562 4.35173 1.16894 5.59507 2.97515 5.59507H3.01012H3.01029ZM8.67966 24H14.0618V14.9572C14.0618 14.4732 14.0968 13.9898 14.2389 13.6438C14.628 12.6769 15.5136 11.6754 17.0003 11.6754C18.9479 11.6754 19.7271 13.1603 19.7271 15.3371V23.9999H25.1089V14.7151C25.1089 9.74134 22.4536 7.42709 18.9125 7.42709C16.009 7.42709 14.7342 9.05002 14.026 10.1554H14.0619V7.80691H8.67978C8.75042 9.32635 8.67978 23.9997 8.67978 23.9997L8.67966 24Z" fill="white"/>
+												</g>
+												<defs>
+												<clipPath id="clip0">
+												<rect width="25.11" height="24" fill="white"/>
+												</clipPath>
+												</defs>
+											</svg>
+										</span>	
+										LinkedIn
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/davidjrousso/?hl=en" target="_blank">
+										<span class="shape_btn insta">
+											<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.9999 11.0947C12.8495 11.0947 11.0946 12.8496 11.0946 15C11.0946 17.1504 12.8495 18.9053 14.9999 18.9053C17.1503 18.9053 18.9052 17.1504 18.9052 15C18.9052 12.8496 17.1503 11.0947 14.9999 11.0947ZM26.7128 15C26.7128 13.3828 26.7274 11.7803 26.6366 10.166C26.5458 8.29103 26.1181 6.62697 24.747 5.25588C23.3729 3.88185 21.7118 3.45705 19.8368 3.36623C18.2196 3.27541 16.6171 3.29006 15.0028 3.29006C13.3856 3.29006 11.7831 3.27541 10.1688 3.36623C8.29384 3.45705 6.62978 3.88478 5.25868 5.25588C3.88466 6.6299 3.45986 8.29103 3.36904 10.166C3.27822 11.7832 3.29286 13.3858 3.29286 15C3.29286 16.6143 3.27822 18.2197 3.36904 19.834C3.45986 21.709 3.88759 23.3731 5.25868 24.7442C6.63271 26.1182 8.29384 26.543 10.1688 26.6338C11.786 26.7246 13.3886 26.71 15.0028 26.71C16.62 26.71 18.2226 26.7246 19.8368 26.6338C21.7118 26.543 23.3759 26.1152 24.747 24.7442C26.121 23.3701 26.5458 21.709 26.6366 19.834C26.7304 18.2197 26.7128 16.6172 26.7128 15ZM14.9999 21.0088C11.6747 21.0088 8.99111 18.3252 8.99111 15C8.99111 11.6748 11.6747 8.99123 14.9999 8.99123C18.3251 8.99123 21.0087 11.6748 21.0087 15C21.0087 18.3252 18.3251 21.0088 14.9999 21.0088ZM21.2548 10.1485C20.4784 10.1485 19.8515 9.5215 19.8515 8.74513C19.8515 7.96877 20.4784 7.34181 21.2548 7.34181C22.0311 7.34181 22.6581 7.96877 22.6581 8.74513C22.6583 8.92949 22.6222 9.11207 22.5517 9.28243C22.4813 9.4528 22.3779 9.60759 22.2476 9.73795C22.1172 9.8683 21.9624 9.97166 21.7921 10.0421C21.6217 10.1125 21.4391 10.1487 21.2548 10.1485Z" fill="white"/>
+											</svg>
+										</span>	
+										Instagram
+									</a>
+								</li>
+								<li>
+									<a href="https://www.compass.com/concierge/david-rousso/" target="_blank">
+										<span class="shape_btn">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.5 6V1.5C19.5 0.671719 18.8283 0 18 0H1.5C0.671719 0 0 0.671719 0 1.5V6C0 6.82828 0.671719 7.5 1.5 7.5H18C18.8283 7.5 19.5 6.82828 19.5 6ZM21 3V9C21 9.82828 20.3283 10.5 19.5 10.5H12C10.343 10.5 9 11.843 9 13.5V15C8.17172 15 7.5 15.6717 7.5 16.5V22.5C7.5 23.3283 8.17172 24 9 24H12C12.8283 24 13.5 23.3283 13.5 22.5V16.5C13.5 15.6717 12.8283 15 12 15V13.5H19.5C21.9853 13.5 24 11.4853 24 9V6C24 4.34297 22.657 3 21 3Z" fill="white"/>
+											</svg>
+										</span>	
+										David’s Concierge Page
+									</a>
+								</li>
+								<li>
+									<a href="https://www.compass.com/agents/david-rousso/?referrer=omnibox" target="_blank">
+										<span class="shape_btn bridge">
+										<svg width="29" height="17" viewBox="0 0 29 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 8.38323V16.7273H2.63636C2.63636 13.8141 4.99855 11.4388 7.90909 11.4388C10.817 11.4388 13.1765 13.8194 13.1818 16.7273H15.8182C15.8182 13.8141 18.1777 11.4388 21.0883 11.4388C22.4877 11.445 23.8279 12.0047 24.8163 12.9955C25.8046 13.9863 26.3609 15.3278 26.3636 16.7273H29V8.38323C21.3097 -2.23867 6.29827 -0.904675 0 8.38323ZM5.27273 8.81823H1.31818C2.421 7.3624 3.75725 6.09919 5.27273 5.07987V8.81823ZM10.5455 8.81823H6.59091V4.23887C7.84163 3.5688 9.16969 3.05439 10.5455 2.70714V8.81823ZM15.8182 8.81823H11.8636V2.43296C13.1713 2.21942 14.5 2.16405 15.8182 2.26951V8.81823ZM21.0909 8.81823H17.1364V2.4356C18.4994 2.65705 19.8255 3.04723 21.0909 3.59823V8.81823ZM22.4091 8.81823V4.24151C24.4736 5.37272 26.2715 6.93336 27.6818 8.81823H22.4091Z" fill="white"/>
+										</svg>
+
+										</span>	
+										David’s Bridge Loan Services Page
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="center">
+			<div class="container">
+				<div class="featured-listings">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="title center">Featured Listings</h4>
+						</div>
+						<div class="col-sm-3">
+							<div class="fl-wrapper">
+								<a href=""><img src="https://pedinistaging.wpengine.com/wp-content/uploads/2020/08/Pine-Drive-FL.png"></a>
+								<p class="location_area">4800 Pine Drive</p>
+								<p class="location_city">Miami, FL 33143</p>
+								<p class="price">$6,995,000</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="fl-wrapper">
+								<a href=""><img src="https://pedinistaging.wpengine.com/wp-content/uploads/2020/08/Los-Pinos-FL.png"></a>
+								<p class="location_area">7220 Los Pinos Boulevard</p>
+								<p class="location_city">Coral Gables, FL 33143</p>
+								<p class="price">$3,499,000</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="fl-wrapper">
+								<a href=""><img src="https://pedinistaging.wpengine.com/wp-content/uploads/2020/08/San-Vicente-FL.png"></a>
+								<p class="location_area">6705 San Vicente Street</p>
+								<p class="location_city">Coral Gables, FL 33146</p>
+								<p class="price">$1,525,000</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="fl-wrapper">
+								<a href=""><img src="https://pedinistaging.wpengine.com/wp-content/uploads/2020/08/Northwest-FL.png"></a>
+								<p class="location_area">8362 Northwest 52nd Terrace</p>
+								<p class="location_city">Doral, FL 33166</p>
+								<p class="price">$479,000</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="center">
+		<p>Copyright © 2020 <a href="#">Nicolas Group</a></p>
+	</footer>
+</body>
+</html>
